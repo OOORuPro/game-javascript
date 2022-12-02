@@ -1,11 +1,14 @@
-let randNum;
+let randNum,guesNum;
 //let tempOut;
 
 randNum = Math.floor((Math.random()*100)+1);
 //tempOut = document.getElementById("temp-out");
 //tempOut.innerHTML = randNum;
+console.log(randNum);
 
-function guessNum(){
+guesNum = document.getElementById("guesNum");
+
+guesNum.addEventListener("click", function(){
 	let userNum=0, out;
 	
 	userNum = document.getElementById("userNum").value;
@@ -24,5 +27,4 @@ function guessNum(){
 	}
 
 	
-}
-console.log(randNum);
+});
