@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Game guess number</title>
+	<style>
+		.wrapper{
+			width: 285px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Игра угадай число</h1>
+		<hr>
+		<label for="userNum">Введите ваше число: </label>
+		<input type="text" id="userNum">
+		<button onclick="guessNum()">Угадать число</button>
+
+		<p id="out">Компьютер загадывает число...</p>
+		<p id="temp-out"></p>
+		<script src="random.js"></script>
+	</div>
+</body>
+</html>
